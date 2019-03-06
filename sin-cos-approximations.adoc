@@ -1,0 +1,1 @@
+= Fast MiniMax Polynomial Approximations of Sine and Cosine
