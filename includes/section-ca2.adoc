@@ -1,0 +1,29 @@
+=== Cos, abs. error minimized, degree 2
+
+Maximum relative error: ∞ +
+Maximum absolute error: 0.0280047979770638759291060552891241475
+
+[#error-plot-ca2]
+image::error-plot-ca2.svg[error-plot-ca2,width=100%,pdfwidth=100%,scaledwidth=100%]
+
+C-style Horner evaluation for sin(2πx) approximation (set `x2 = x * x` first):
+
+[source,C]
+----
+0.971995202022936124070893944710875852 - 16.0000000000000002179692507853476138*x2
+----
+
+C-style Horner evaluation for sin(x) approximation (set `x2 = x * x` first):
+
+[source,C]
+----
+0.971995202022936124070893944710875852 - 0.405284734569351091296743474640156079*x2
+----
+
+WL-style coefficient list:
+
+[source,Wolfram Language]
+----
+{0.9719952020229361240708939447108758524754531195581202864464`36., -0.4052847345693510912967434746401560789497236932431234169525`36.}
+----
+
