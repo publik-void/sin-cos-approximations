@@ -1,7 +1,9 @@
 = Fast MiniMax Polynomial Approximations of Sine and Cosine
 Lasse Schlör
 :imagesdir: https://github.com/publik-void/sin-cos-approximations/raw/master/images
-:toc: left
+//:toc: left
+:toc:
+:toc-placement!:
 
 WARNING: As of March 2019, GitHub's limited Asciidoc implementation makes
 getting this document to display correctly really hard. Viewing the .adoc or the
