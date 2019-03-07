@@ -1,6 +1,5 @@
 = Fast MiniMax Polynomial Approximations of Sine and Cosine
 Lasse Schlör
-:imagesprefix: https://github.com/publik-void/sin-cos-approximations/raw/master/images
 :toc: left
 
 include::includes/body.adoc[]
