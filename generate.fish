@@ -23,7 +23,7 @@ for i in $argv
   end
 end
 
-if not ty pe -q $wolframscript_command
+if not type -q $wolframscript_command
   set wolframscript_command /Applications/Mathematica.app/Contents/MacOS/wolframscript
 end
 
