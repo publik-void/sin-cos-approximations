@@ -4,6 +4,13 @@ Lasse Schlör
 //:toc: left
 :toc:
 :toc-placement!:
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
 
 WARNING: As of March 2019, GitHub's limited Asciidoc implementation makes
 getting this document to display correctly really hard. Viewing the .adoc or the
