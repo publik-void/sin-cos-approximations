@@ -3,17 +3,27 @@
 # instead. But hey, this is no software library 😄
 
 set --local execute_scripts yes
+set --local generate_gist yes
+set --local generate_pdf yes
+set --local generate_html yes
 set --local doctype article
 set --local wolframscript_command wolframscript
 set --local target_dir targets
 
 for i in $argv
-  if test $i = --skip-scripts
+  switch($i)
+  case --skip-scripts
     set execute_scripts no
+  case --skip-gist
+    set generate_gist no
+  case --skip-pdf
+    set generate_gist no
+  case --skip-html
+    set generate_html no
   end
 end
 
-if not type -q $wolframscript_command
+if not ty pe -q $wolframscript_command
   set wolframscript_command /Applications/Mathematica.app/Contents/MacOS/wolframscript
 end
 
@@ -24,13 +34,19 @@ if test $execute_scripts = yes
 end
 
 # Generate gist
-cd gist-generate
-./gist-generate.fish
-cd ..
+if test $generate_gist = yes
+  cd gist-generate
+  ./gist-generate.fish
+  cd ..
+end
 
 # Generate target files
-asciidoctor-pdf --doctype $doctype\
-  --out-file $target_dir/sin-cos-approximations.pdf sin-cos-approximations.adoc
-asciidoctor --doctype $doctype --attribute data-uri\
-  --out-file $target_dir/sin-cos-approximations.html sin-cos-approximations.adoc
+if test $generate_pdf = yes
+  asciidoctor-pdf --doctype $doctype\
+    --out-file $target_dir/sin-cos-approximations.pdf sin-cos-approximations.adoc
+end
 
+if test $generate_html = yes
+  asciidoctor --doctype $doctype --attribute data-uri --backend html5\
+    --out-file $target_dir/sin-cos-approximations.html sin-cos-approximations.adoc
+end
