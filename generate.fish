@@ -12,14 +12,14 @@ set --local target_dir targets
 
 for i in $argv
   switch($i)
-  case --skip-scripts
-    set execute_scripts no
-  case --skip-gist
-    set generate_gist no
-  case --skip-pdf
-    set generate_gist no
-  case --skip-html
-    set generate_html no
+    case --skip-scripts
+      set execute_scripts no
+    case --skip-gist
+      set generate_gist no
+    case --skip-pdf
+      set generate_gist no
+    case --skip-html
+      set generate_html no
   end
 end
 
