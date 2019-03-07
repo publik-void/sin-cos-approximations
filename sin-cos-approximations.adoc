@@ -3,6 +3,9 @@ Lasse Schlör
 :imagesdir: images
 :includedir: includes
 :toc: left
+ifeval::["{backend}" == "pdf"]
+:toc: macro
+endif::[]
 
 [abstract]
 == Abstract
