@@ -12,7 +12,7 @@ unfortunately.
 
 There is also a
 https://gist.github.com/publik-void/067f7f2fef32dbe5c27d6e215f824c91[GitHub
-Gist], which would be very convenient if GitHub's Asciidoc Implementation would
+Gist version], which would be very convenient if GitHub's Asciidoc Implementation would
 support include-directives and GitHub-hosted images. I'm leaving this in a
 broken state here for now since there seems to be some hope that Asciidoc on
 GitHub will improve in the future.
