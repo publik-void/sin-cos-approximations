@@ -6,5 +6,14 @@ ifeval::["{backend}" == "pdf"]
 :toc: macro
 endif::[]
 
+ifdef::env-github[]
+NOTE: As of March 2019, GitHub's limited Asciidoc implementation makes
+getting this document to display correctly really hard. Viewing the .adoc or the
+Gist version on GitHub is not recommended until this improves. Please use
+https://github.com/publik-void/sin-cos-approximations/tree/master/targets[
+some of the other target files] in the corresponding repository for a more
+pleasant experience.
+endif::env-github[]
+
 include::includes/body.adoc[]
 
