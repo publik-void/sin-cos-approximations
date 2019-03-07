@@ -28,7 +28,7 @@ image::error-summary-plot.svg[error-summary-plot,width=100%,pdfwidth=100%,scaled
 
 The approximations are provided with DSP applications in mind. Calculating sines
 and cosines with low memory footprint, only floating-point multiply-adds and no
-more precision than needed can improve performance signifacantly in some cases.
+more precision than needed can improve performance significantly in some cases.
 
 The interval [-1/2, 1/2] can be folded with the function f(x) = max(min(x, 1/2 -
 x), -1/2 - x)) such that a polynomial p(x), which approximates sin(2πx) over
@@ -44,7 +44,7 @@ or cosine over [-∞, ∞].
 I chose to approximate sin(2πx) for 0 < x < 1/4 and cos(2πx) for 0 < x < 1/4.
 sin(2πx a) for 0 < x < 1/(4a) and any a ∈ ℝ is already covered then, since it is
 trivial to transform the coefficients accordingly and the optimum approximation
-coefficients would be the same, except for that transormation. Similarly, (a
+coefficients would be the same, except for that transformation. Similarly, (a
 sin(2πx)) for any a ∈ ℝ does not gain anything. This includes -sin and -cos in
 particular. sin(2πx + a) for 0 < x < 1/4 and any a ∈ ℝ is not generally
 sufficient since one needs to approximate at least a complete quarter of one
@@ -70,13 +70,13 @@ the least error for a given number of nonzero coefficients when using only odd
 or even coefficients. Interestingly, the approximations of the sine function for
 a given number of odd coefficients were usually marginally or even substantially
 better than the approximations of the cosine function for an equal number of
-even coefficients. I have not attempted to prove these results or found someting
-like a proof, so they may not generally hold true for higher degree polynomials,
-other values of p, or other norms in general, but the trend was definitely
-visible in the data.  Evaluating a polynomial with n coefficients a~i~ where i =
-2 j + 1 and j ∈ {0, …, n-1} (having a sine approximation in mind) takes merely
-one multiplication more than evaluating such a polynomial where i = 2 j (having
-a cosine approximation in mind) when using Horner's scheme.
+even coefficients. I have not attempted to prove these results or found
+something like a proof, so they may not generally hold true for higher degree
+polynomials, other values of p, or other norms in general, but the trend was
+definitely visible in the data.  Evaluating a polynomial with n coefficients
+a~i~ where i = 2 j + 1 and j ∈ {0, …, n-1} (having a sine approximation in mind)
+takes merely one multiplication more than evaluating such a polynomial where i =
+2 j (having a cosine approximation in mind) when using Horner's scheme.
 
 Some of the discussed findings are reflected by <<Garrett2012>> and
 <<samhocevar2018>>.
@@ -84,7 +84,7 @@ Some of the discussed findings are reflected by <<Garrett2012>> and
 === More design variables
 
 Other things to consider when finding such sine approximations include choosing
-wether the points sin(0) == 0 and sin(2π 1/4) == 1 should be matched perfectly
+whether the points sin(0) == 0 and sin(2π 1/4) == 1 should be matched perfectly
 by the polynomial, whether one wants to minimize relative, absolute, or some
 other error, choosing the norm one wants to minimize and choosing the numerical
 precision of the coefficients one wants to derive.
@@ -115,7 +115,7 @@ highly discourage it.
 The Remez algorithm <<Remez1934>> can be used to minimize the Max-Norm.
 
 <<Garrett2012>> describes an algorithm for minimizing the 2-Norm of the absolute
-error. I did not check wether this can be generalized to other p-Norms, but I
+error. I did not check whether this can be generalized to other p-Norms, but I
 would assume so.
 
 === Summary
