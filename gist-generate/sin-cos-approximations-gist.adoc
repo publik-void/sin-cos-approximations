@@ -1,0 +1,8 @@
+= Fast MiniMax Polynomial Approximations of Sine and Cosine
+Lasse Schlör
+:imagesdir: .
+:includedir: .
+:toc: left
+
+include::{includedir}/body.adoc[]
+

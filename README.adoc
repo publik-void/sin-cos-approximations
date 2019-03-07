@@ -1,0 +1,7 @@
+= Repository for sin-cos-approximations.adoc
+Lasse Schlör
+
+This is a repository for an article called _Fast MiniMax Polynomial
+Approximations of Sine and Cosine_. There are different distribution formats,
+but one of them is
+https://gist.github.com/publik-void/067f7f2fef32dbe5c27d6e215f824c91[this Gist].
