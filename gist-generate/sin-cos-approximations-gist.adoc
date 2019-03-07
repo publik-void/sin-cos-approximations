@@ -5,5 +5,5 @@ Lasse Schlör
 :file-approximation-sections: https://github.com/publik-void/sin-cos-approximations/raw/master/includes/approximation-sections.adoc
 :file-error-summary-plot: https://github.com/publik-void/sin-cos-approximations/raw/master/images/error-summary-plot.svg
 
-include::{file-body}/[]
+include::{file-body}[]
 
