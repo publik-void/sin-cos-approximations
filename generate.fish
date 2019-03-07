@@ -17,7 +17,7 @@ for i in $argv
     case --skip-gist
       set generate_gist no
     case --skip-pdf
-      set generate_gist no
+      set generate_pdf no
     case --skip-html
       set generate_html no
   end
