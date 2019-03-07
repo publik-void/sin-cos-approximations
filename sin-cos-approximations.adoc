@@ -1,14 +1,10 @@
 = Fast MiniMax Polynomial Approximations of Sine and Cosine
 Lasse Schlör
 :imagesdir: images
-:includedir: includes
 :toc: left
 ifeval::["{backend}" == "pdf"]
 :toc: macro
 endif::[]
-:file-body: {includedir}/body.adoc
-:file-approximation-sections: approximation-sections.adoc
-:file-error-summary-plot: error-summary-plot.svg
 
-include::{file-body}/[]
+include::includes/body.adoc[]
 
