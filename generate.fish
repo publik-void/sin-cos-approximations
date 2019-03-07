@@ -11,7 +11,7 @@ set --local wolframscript_command wolframscript
 set --local target_dir targets
 
 for i in $argv
-  switch($i)
+  switch ($i)
     case --skip-scripts
       set execute_scripts no
     case --skip-gist
