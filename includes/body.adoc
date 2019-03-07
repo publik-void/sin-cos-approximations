@@ -13,13 +13,13 @@ toc::[]
 
 == Approximations
 
-include::approximation-sections.adoc[]
+include::{file-approximation-sections}[]
 
 [appendix]
 == Summary of Polynomial Degree vs. Max. Error
 
 [#error-summary-plot]
-image::error-summary-plot.svg[error-summary-plot,width=100%,pdfwidth=100%,scaledwidth=100%]
+image::{file-error-summary-plot}[error-summary-plot,width=100%,pdfwidth=100%,scaledwidth=100%]
 
 [appendix]
 == Why approximate sin(2πx) et al. this way?

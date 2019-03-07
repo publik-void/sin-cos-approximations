@@ -6,6 +6,9 @@ Lasse Schlör
 ifeval::["{backend}" == "pdf"]
 :toc: macro
 endif::[]
+:file-body: {includedir}/body.adoc
+:file-approximation-sections: approximation-sections.adoc
+:file-error-summary-plot: error-summary-plot.svg
 
-include::{includedir}/body.adoc[]
+include::{file-body}/[]
 
