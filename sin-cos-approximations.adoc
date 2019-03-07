@@ -1,6 +1,7 @@
 = Fast MiniMax Polynomial Approximations of Sine and Cosine
 Lasse Schlör
 :imagesdir: images
+:imagesprefix:
 :toc: left
 ifeval::["{backend}" == "pdf"]
 :toc: macro
