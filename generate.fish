@@ -41,12 +41,15 @@ if test $generate_gist = yes
 end
 
 # Generate target files
-if test $generate_pdf = yes
-  asciidoctor-pdf --doctype $doctype\
-    --out-file $target_dir/sin-cos-approximations.pdf sin-cos-approximations.adoc
-end
-
 if test $generate_html = yes
   asciidoctor --doctype $doctype --attribute data-uri --backend html5\
     --out-file $target_dir/sin-cos-approximations.html sin-cos-approximations.adoc
 end
+
+if test $generate_pdf = yes
+  asciidoctor-pdf --doctype $doctype\
+  --attribute pdf-style=./themes/pdf-theme.yml\
+  --attribute pdf-fontsdir=./fonts\
+  --out-file $target_dir/sin-cos-approximations.pdf sin-cos-approximations.adoc
+end
+
