@@ -5,16 +5,11 @@ Lasse Schlör
 This is a repository for an article called _Fast MiniMax Polynomial
 Approximations of Sine and Cosine_. There are different
 https://github.com/publik-void/sin-cos-approximations/tree/master/targets[
-distribution formats], though the
-https://publik-void.github.io/sin-cos-approximations[GitHub page] is probably
-the easiest to access. 🙂 Alternatively, you can download the
-https://github.com/publik-void/sin-cos-approximations/raw/master/targets/sin-cos-approximations.pdf[PDF version].
+distribution formats], I recommend the
+https://publik-void.github.io/sin-cos-approximations[GitHub page]. 🙂
+Alternatively, you can read the
+https://gist.github.com/publik-void/067f7f2fef32dbe5c27d6e215f824c91[GitHub Gist
+version] or download the
+https://github.com/publik-void/sin-cos-approximations/raw/master/targets/sin-cos-approximations.pdf[PDF
+version].
 
-'''
-
-There is also a
-https://gist.github.com/publik-void/067f7f2fef32dbe5c27d6e215f824c91[GitHub
-Gist version], which would be very convenient if GitHub's Asciidoc
-Implementation would support include-directives and GitHub-hosted images. I'm
-leaving this in a half-broken state here for now since there seems to be some
-hope that Asciidoc on GitHub will improve in the future.

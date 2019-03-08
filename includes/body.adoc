@@ -9,6 +9,11 @@ coefficients is the maximum of the relative or absolute error over the "first"
 quarter of one period of the sine function. The polynomials can be evaluated
 quickly using Horner's scheme.
 
+ifdef::env-github[]
+:toc-title:  
+== Table of Contents
+endif::env-github[]
+
 toc::[]
 
 == Approximations
