@@ -5,7 +5,9 @@ set --local gist_dir ../targets/gist
 
 ./asciidoc-include-preprocessor.fish
 rm -rf $gist_dir/*
-rm $gist_dir/.DS_Store
+if test -e $gist_dir/.DS_Store
+  rm $gist_dir/.DS_Store
+end
 #cp ../images/* $gist_dir
 cp out.adoc $gist_dir/sin-cos-approximations-gist.adoc
 rm out.adoc
