@@ -9,6 +9,17 @@ coefficients is the maximum of the relative or absolute error over the "first"
 quarter of one period of the sine function. The polynomials can be evaluated
 quickly using Horner's scheme.
 
+== Other formats
+
+The latest version of this article is accessible as a
+https://publik-void.github.io/sin-cos-approximations/[web page] and as a
+https://gist.github.com/publik-void/067f7f2fef32dbe5c27d6e215f824c91[GitHub
+gist]. You may also want to
+https://github.com/publik-void/sin-cos-approximations/raw/master/targets/sin-cos-approximations.pdf[
+download the PDF version] or
+https://github.com/publik-void/sin-cos-approximations[access the Git
+repository].
+
 ifdef::env-github[]
 :toc-title:  
 == Table of Contents
