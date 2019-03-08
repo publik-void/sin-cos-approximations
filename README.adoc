@@ -1,5 +1,4 @@
-= Repository for
-https://publik-void.github.io/sin-cos-approximations[_Fast MiniMax Polynomial Approximations of Sine and Cosine_]
+= Repository for https://publik-void.github.io/sin-cos-approximations[_Fast MiniMax Polynomial Approximations of Sine and Cosine_]
 Lasse Schlör
 
 This is a repository for an article called _Fast MiniMax Polynomial
