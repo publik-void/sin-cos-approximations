@@ -42,8 +42,11 @@ end
 
 # Generate target files
 if test $generate_html = yes
+  asciidoctor --doctype $doctype --backend html5 --out-file\
+    $target_dir/sin-cos-approximations.html sin-cos-approximations.adoc
   asciidoctor --doctype $doctype --attribute data-uri --backend html5\
-    --out-file $target_dir/sin-cos-approximations.html sin-cos-approximations.adoc
+    --out-file $target_dir/sin-cos-approximations-portable.html\
+    sin-cos-approximations.adoc
 end
 
 if test $generate_pdf = yes
